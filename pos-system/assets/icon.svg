@@ -1,0 +1,21 @@
+
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="56" fill="#0F172A"/>
+  <rect x="16" y="16" width="224" height="224" rx="44" stroke="#1E293B" stroke-width="4"/>
+  
+  <!-- Icono POS / Terminal -->
+  <rect x="58" y="48" width="140" height="160" rx="20" fill="#0284C7"/>
+  <rect x="74" y="68" width="108" height="50" rx="8" fill="#0F172A"/>
+  
+  <!-- Pantalla del POS -->
+  <text x="128" y="100" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="18" font-weight="900" text-anchor="middle">NEXO</text>
+  
+  <!-- Botonera -->
+  <circle cx="90" cy="144" r="8" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="128" cy="144" r="8" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="166" cy="144" r="8" fill="#FFFFFF" opacity="0.9"/>
+  
+  <circle cx="90" cy="174" r="8" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="128" cy="174" r="8" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="166" cy="174" r="10" fill="#10B981"/>
+</svg>

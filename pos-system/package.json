@@ -1,0 +1,46 @@
+{
+  "name": "nexopos",
+  "version": "1.0.0",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "dist:win": "npm run build:frontend && electron-builder --win"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "electron": "^44.1.0",
+    "electron-builder": "^26.15.3",
+    "png-to-ico": "^3.0.2",
+    "wait-on": "^9.1.0"
+  },
+  "build": {
+    "appId": "com.nexopos.app",
+    "productName": "NexoPOS",
+    "asar": false,
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "main.js",
+      "splash.html",
+      "package.json",
+      "assets/**/*",
+      "backend/**/*",
+      "frontend/dist/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico",
+      "shortcutName": "Nexo POS"
+    }
+  }
+}
